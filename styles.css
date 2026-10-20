@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html {
+    font-size: 10px;
+    background-color: #D9C8B6;
+}
+h1 {
+    font-size: 5.5rem;
+    font-family: 'Bagel Fat One', sans-serif;
+    color: #76563F;
+}
+.hero-button {
+    font-family: 'Inria Serif', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #D9C8B6;
+    background-color: #76563F;
+    padding-left: 10;
+    padding-right: 10;
+    padding-top: 10;
+    padding-bottom: 10;
+    border-radius: 10px;
+}
