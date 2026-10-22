@@ -1,24 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("reset.css");
 
 html {
-    font-size: 10px;
-    background-color: #D9C8B6;
+  font-size: 10px;
+  background-color: #76563f;
+  width: 100%;
+  height: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1 {
-    font-size: 5.5rem;
-    font-family: 'Bagel Fat One', sans-serif;
-    color: #76563F;
+  font-size: 6.7rem;
+  font-family: "Bagel Fat One", sans-serif;
+  color: #fedbb6;
+  text-align: center;
 }
 .hero-button {
-    font-family: 'Inria Serif', serif;
-    font-weight: normal;
-    font-size: 1.5rem;
-    color: #D9C8B6;
-    background-color: #76563F;
-    padding-left: 10;
-    padding-right: 10;
-    padding-top: 10;
-    padding-bottom: 10;
-    border-radius: 10px;
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  width: 344px;
+  box-sizing: border-box;
+  background-color: #646d52;
+  border: 2px solid #fedbb6;
+  color: #d9c8b6;
+  padding: 13px 133px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fedbb6;
+  padding-left: 122px;
+  padding-right: 122px;
+  margin-bottom: 55px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+}
+
+nav li {
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav .nav-button {
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  width: 223px;
+  box-sizing: border-box;
+  background-color: #646d52;
+  border: 2px solid #76563f;
+  color: #d9c8b6;
+  padding: 13px 72.5px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #76563f;
+}
+
+.hero-left {
+  margin-right: 36px;
+  width: 588px;
+  height: 493px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-left h1 {
+  margin-bottom: 20px;
+}
+
+.hero-left img {
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+
+.hero-left a {
+  margin-top: 29px;
+}
+
+.hero-right {
+  width: 536px;
+  height: 814px;
+  margin-left: 36px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-height: 814px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 122px;
+  margin-right: 122px;
+}
+
+.nav-right {
+  display: flex;
+  width: 710px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding-left: 13.7rem;
+  padding-right: 13.7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 2px solid #fedbb6;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #76563f;
+  width: 50%;
+  max-width: 885px;
+  height: 55%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 5.5rem;
+  color: #fedbb6;
+  font-family: "Bagel Fat One", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width:100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  cursor: pointer;
+  color: #fedbb6;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  font-family: "Inria Serif", serif;
+  color: #fedbb6;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 4.4rem;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal img {
+  width: 531.24px;
+  height: 157.53px;
+  margin-left: 95px;
+  margin-right: 85px;
+}
+
+.modal-buttons {
+  display: flex;
+  margin-top: 44px;
+  margin-bottom: 50px;
+}
+
+.modal-buttons a {
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  width: 223px;
+  box-sizing: border-box;
+  background-color: #646d52;
+  border: 2px solid #d9c8b6;
+  color: #d9c8b6;
+  padding: 13px 65px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }

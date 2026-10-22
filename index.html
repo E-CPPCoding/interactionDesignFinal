@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Interactive Coding Project Home</title>
-        <link href="styles.css" type="text/css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html"> Caffeinated Cat Cafe</a>
-                    </li>
-                    <li><a href="">Our Cats</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Our Menu</a></li>
-                    <li><a href="">Reservations</a></li>
-                    <li><a href="">Order Now</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="hero-left">
-                <h1>Where Cats and Coffee Unite</h1>
-                <a href="" class="hero-button">Order Now</a>
-            </div>
-            <div class="hero-right">
-
-            </div>
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interactive Coding Project Home</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><img src="images/logo.svg" /></a>
+          </li>
+          <div class="nav-right">
+            <li><a href="">Our Cats</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Menu</a></li>
+            <li><a href="">Reservations</a></li>
+            <li><a href="" class="nav-button">Order Now</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-left">
+        <h1>Where Cats and Coffee Unite</h1>
+        <img src="images/latteArt.svg" />
+        <a href="" class="hero-button">Order Now</a>
+      </div>
+      <div class="hero-right">
+        <img src="images/mainCatImage.svg" />
+      </div>
+    </main>
+    <!--MODAL STARTS HERE-->
+    <div class="modal" id="modal">
+      <button data-close-button class="close-button">&times;</button>
+      <div class="modal-header">
+        <div class="title">Buy One, Get One Free!</div>
+      </div>
+      <div class="modal-body">
+        Get a free drink of equal or lesser value with the purchase of any
+        drink!
+      </div>
+      <img src="images/coffeeCups.svg" />
+      <div class="modal-buttons">
+        <a href="">Get the Offer</a>
+        <a href="">No Thanks</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
 </html>
