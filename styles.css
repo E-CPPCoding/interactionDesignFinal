@@ -80,12 +80,13 @@ h1 {
 }
 
 .hero-left {
-  margin-right: 36px;
   width: 588px;
   height: 493px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-left h1 {
@@ -104,7 +105,8 @@ h1 {
 .hero-right {
   width: 536px;
   height: 814px;
-  margin-left: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html {
@@ -125,8 +127,8 @@ main {
   max-height: 814px;
   margin-top: 55px;
   margin-bottom: 55px;
-  margin-left: 122px;
-  margin-right: 122px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal {
@@ -211,7 +213,7 @@ main {
 }
 
 nav {
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #fedbb6;
