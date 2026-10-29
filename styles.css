@@ -75,7 +75,7 @@ body:has(.nav-button:hover) .hero-right img {
   font-weight: bold;
   width: 223px;
   box-sizing: border-box;
-  background-color: #646d52;
+  background-color: #3e4332;
   border: 2px solid #76563f;
   color: #d9c8b6;
   padding: 13px 72.5px;
@@ -106,7 +106,7 @@ h1 {
   font-weight: bold;
   width: 344px;
   box-sizing: border-box;
-  background-color: #646d52;
+  background-color: #3e4332;
   border: 2px solid #fedbb6;
   color: #d9c8b6;
   padding: 13px 133px;
@@ -238,7 +238,7 @@ main {
     width: 223px;
     height:48px;
     box-sizing: border-box;
-    background-color: #646d52;
+    background-color: #3e4332;
     border: 2px solid #d9c8b6;
     color: #d9c8b6;
     padding: 13px 65px;
@@ -261,7 +261,7 @@ main {
     width: 223px;
     height:48px;
     box-sizing: border-box;
-    background-color: #646d52;
+    background-color: #3e4332;
     border: 2px solid #d9c8b6;
     color: #d9c8b6;
     padding: 13px 65px;
@@ -361,7 +361,7 @@ h1 {
   font-weight: bold;
   width: 344px;
   box-sizing: border-box;
-  background-color: #646d52;
+  background-color: #3e4332;
   border: 2px solid #fedbb6;
   color: #d9c8b6;
   padding: 13px 133px;
@@ -494,7 +494,7 @@ main {
     width: 223px;
     height:48px;
     box-sizing: border-box;
-    background-color: #646d52;
+    background-color: #3e4332;
     border: 2px solid #d9c8b6;
     color: #d9c8b6;
     padding: 13px 65px;
@@ -517,7 +517,7 @@ main {
     width: 223px;
     height:48px;
     box-sizing: border-box;
-    background-color: #646d52;
+    background-color: #3e4332;
     border: 2px solid #d9c8b6;
     color: #d9c8b6;
     padding: 13px 65px;
