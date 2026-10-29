@@ -11,25 +11,40 @@
   <body>
     <header>
       <nav>
+        <div class="desktopNav">
         <ul>
           <li>
             <a href="index.html"><img src="images/logo.svg" /></a>
           </li>
           <div class="nav-right">
-            <li><a href="" class="btn-1">Our Cats</a></li>
-            <li><a href="" class="btn-2">About Us</a></li>
-            <li><a href="" class="btn-3">Our Menu</a></li>
-            <li><a href="" class="btn-4">Reservations</a></li>
+              <li><a href="" class="btn-1">Our Cats</a></li>
+              <li><a href="" class="btn-2">About Us</a></li>
+              <li><a href="" class="btn-3">Our Menu</a></li>
+              <li><a href="" class="btn-4">Reservations</a></li>
             <li><a href="" class="nav-button">Order Now</a></li>
           </div>
         </ul>
+        </div>
+        </div>
+        <div class="mobileNav">
+          <ul>
+            <li>
+            <a href="index.html"><img src="images/logo.svg" /></a>
+          </li>
+          <li>
+            <img src="images/hamburger.svg" alt="">
+          </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <div class="hero-left">
         <h1>Where Cats and Coffee Unite</h1>
         <img src="images/latteArt.svg" />
+        <img class="button-animation" src="images/catButton.svg"/>
         <a href="" class="hero-button">Order Now</a>
+          <div class="hideCat"></div>
       </div>
       <div class="hero-right">
         <img src="images/mainCatImage.svg" />
@@ -37,7 +52,9 @@
     </main>
     <!--MODAL STARTS HERE-->
     <div class="modal" id="modal">
-      <button data-close-button class="close-button">&times;</button>
+      <div class="modal-close-btn">
+        <button data-close-button class="close-button">&times;</button>
+      </div>
       <div class="modal-header">
         <div class="title">Buy One, Get One Free!</div>
       </div>
@@ -46,9 +63,11 @@
         drink!
       </div>
       <img src="images/coffeeCups.svg" />
-      <div class="modal-buttons">
-        <a href="">Get the Offer</a>
-        <a href="">No Thanks</a>
+      <div class="modal-button-left">
+        <button data-close-button class="close-button">Get the Offer</button>
+      </div>
+      <div class="modal-button-right">
+        <button data-close-button class="close-button">No Thanks</button>
       </div>
     </div>
     <div id="overlay"></div>
