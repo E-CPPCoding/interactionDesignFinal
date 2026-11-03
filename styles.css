@@ -340,8 +340,7 @@ main {
 }
 
 @media only screen and (max-width: 1290px) {
-body:has(.hero-button:hover) .hero-left .button-animation {
-    opacity: 1;
+body:has(.hero-button:active) .hero-left .button-animation {
     transform: translateY(0);
 }
 
